@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
-
 header{	
 	background: rgb(69,72,77);
 background: -moz-linear-gradient(left, rgb(0, 0, 0) 50%, rgba(87, 184, 255, 1) 50%);
@@ -14,17 +13,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 	font-family: 'Orbitron';
 }
 
-@media(max-width: 1213px) {
+
+@media(max-width: 1200px) {
 	.conteiner{
 		padding: 0px 50px;
+		
 	}
 }
 
-body{
-	@media(max-width: 1213px) {
-		display: flex;
+
+@media(max-width: 850px){
+	.header__menu{
+		display: none;
+	}
+	.header__icon{
+		
 	}
 }
+
 
 .conteiner{
 	width: 1220px;
@@ -62,7 +68,7 @@ body{
 }
 
 .header-attribute__btn button{
-	padding: 16px 31px;
+	padding: 16px 34px;
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 18px;
@@ -169,5 +175,43 @@ body{
 	height: 33px;
     position: absolute;
 	bottom: -250px;
-	right: -64px;
+	right: 0px;
+}
+
+
+.conteiner{
+	width: 1220px;
+	margin: 0 auto;
+}
+
+.header__header{
+	height: 82px;
+	width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 60px 0px 0px;
+}
+
+
+.header__menu{
+	a{
+		color: #ffff;
+	}
+	ul{
+		display: flex;
+	}
+	li{
+		padding-right: 60px;
+	}
+	li:first-child{
+		padding-left: 60px;
+	}
+}
+
+
+body{
+	@media(max-width: 1100px){
+		display: flex;
+	}
 }

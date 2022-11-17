@@ -79,17 +79,16 @@ header {
   font-family: "Orbitron";
 }
 
-@media (max-width: 1213px) {
+@media (max-width: 1200px) {
   .conteiner {
     padding: 0px 50px;
   }
 }
-@media (max-width: 1213px) {
-  body {
-    display: flex;
+@media (max-width: 850px) {
+  .header__menu {
+    display: none;
   }
 }
-
 .conteiner {
   width: 1220px;
   margin: 0 auto;
@@ -122,7 +121,7 @@ header {
 }
 
 .header-attribute__btn button {
-  padding: 16px 31px;
+  padding: 16px 34px;
   border: 1px solid #fff;
   color: #fff;
   font-size: 18px;
@@ -225,5 +224,38 @@ header {
   height: 33px;
   position: absolute;
   bottom: -250px;
-  right: -64px;
+  right: 0px;
+}
+
+.conteiner {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.header__header {
+  height: 82px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px 0px 0px;
+}
+
+.header__menu a {
+  color: white;
+}
+.header__menu ul {
+  display: flex;
+}
+.header__menu li {
+  padding-right: 60px;
+}
+.header__menu li:first-child {
+  padding-left: 60px;
+}
+
+@media (max-width: 1100px) {
+  body {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
