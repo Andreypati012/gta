@@ -88,13 +88,20 @@ header {
   .header__menu {
     display: none;
   }
+  .header__icon img {
+    width: 280px;
+  }
+  .header {
+    display: inline-flex;
+    justify-content: center;
+  }
 }
 .conteiner {
   width: 1220px;
   margin: 0 auto;
 }
 
-.header__header {
+.header {
   height: 82px;
   width: 100%;
   display: flex;
@@ -183,7 +190,7 @@ header {
 .header__btn--dark {
   background-color: #000;
   margin-right: 50px;
-  width: 200px;
+  padding: 21px 34px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -197,7 +204,7 @@ header {
 
 .header__btn--active {
   margin-right: 50px;
-  width: 200px;
+  padding: 21px 34px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,5 +264,83 @@ header {
 @media (max-width: 1100px) {
   body {
     display: flex;
+  }
+}
+
+@media (max-width: 850px) {
+  .header__menu {
+    display: none;
+  }
+  .header__icon img {
+    width: 280px;
+  }
+  .header {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+  .header-attribute__btn button {
+    font-size: 22px;
+  }
+  .header-attribute__shop img {
+    width: 45px;
+    height: 45px;
+  }
+  .header__text {
+    font-size: 19px;
+  }
+}
+@media (max-width: 750px) {
+  .header__icon img {
+    margin-left: 110px;
+  }
+  .header__icon img {
+    width: 340px;
+  }
+  .header {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+  .header-attribute__btn button {
+    font-size: 28px;
+  }
+  .header-attribute__shop img {
+    width: 50px;
+    height: 50px;
+  }
+  .header__text {
+    font-size: 21.5px;
+    position: relative;
+    z-index: 1;
+    margin-right: 130px;
+  }
+  .header__title {
+    position: relative;
+    z-index: 1;
+  }
+  .header__btn {
+    position: relative;
+    z-index: 1;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .cybersport {
+    margin-right: 410px;
+  }
+  .header__content-block-right {
+    position: absolute;
+    top: 550px;
+    right: -40px;
+    z-index: 0;
+  }
+  .header__btn--dark {
+    font-size: 22px;
+  }
+  .header__btn--active {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
